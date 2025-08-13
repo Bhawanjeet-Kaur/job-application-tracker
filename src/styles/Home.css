@@ -31,16 +31,28 @@
   font-weight: lighter;
   color: black;
 }
+.buttonContainer {
+  position: absolute;
+  right: 15%;
+  top: 50%;
+  transform: translateY(-50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 150px;
+  z-index: 10;
+}
 
-.headerContainer button {
+.headerContainer button,
+.buttonContainer button {
   color: black;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   justify-content: center;
   background-color: #121619;
-  height: 50px;
-  width: 180px;
+  height: 80px;
+  width: 280px;
   color: white;
   text-decoration: none;
   font-size: 20px;
