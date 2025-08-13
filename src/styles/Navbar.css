@@ -27,7 +27,7 @@
 }
 
 .navbar a {
-  color: black;
+  color: #315631;;
   text-decoration: none;
   margin: 20px;
 }
@@ -35,7 +35,7 @@
 .navbar .rightSide button {
   background-color: transparent;
   border: none;
-  color: black;
+  color: #315631;
   cursor: pointer;
 }
 
