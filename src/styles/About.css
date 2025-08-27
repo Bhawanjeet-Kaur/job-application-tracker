@@ -1,0 +1,170 @@
+/* Enhanced CSS for the Information class */
+.Information {
+  max-width: 900px;
+  max-height: 80vh;
+  margin: 2rem auto;
+  padding: 3rem;
+  background: transparent;
+  border-radius: 20px;
+  position: relative;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.Information::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #8B7355 0%, #A0956B 100%);
+  border-radius: 20px 20px 0 0;
+}
+
+.Information h1 {
+  color: #000000;
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-shadow: none;
+}
+
+.Information h2 {
+  color: #000000;
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 2.5rem 0 1.5rem 0;
+  text-align: center;
+  position: relative;
+}
+
+.Information h2::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, #8B7355 0%, #A0956B 100%);
+  border-radius: 2px;
+}
+
+.Information p {
+  color: #000000;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
+.Information p:first-of-type {
+  font-size: 1.2rem;
+  color: #000000;
+  font-weight: 500;
+}
+
+.features-highlight {
+  margin-top: 3rem;
+  padding: 2rem;
+  background: rgba(139, 115, 85, 0.1);
+  border-radius: 15px;
+  border: 1px solid rgba(139, 115, 85, 0.2);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.feature-item {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: #000000;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  border: 1px solid rgba(139, 115, 85, 0.2);
+  transition: all 0.3s ease;
+  cursor: default;
+}
+
+.feature-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  background: linear-gradient(135deg, #8B7355 0%, #A0956B 100%);
+  color: white;
+}
+
+/* Custom Scrollbar Styling */
+.Information::-webkit-scrollbar {
+  width: 8px;
+}
+
+.Information::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.Information::-webkit-scrollbar-thumb {
+  background: rgba(139, 115, 85, 0.6);
+  border-radius: 10px;
+}
+
+.Information::-webkit-scrollbar-thumb:hover {
+  background: rgba(139, 115, 85, 0.8);
+}
+@media (max-width: 768px) {
+  .Information {
+    margin: 1rem;
+    padding: 2rem 1.5rem;
+    border-radius: 15px;
+  }
+
+  .Information h1 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .Information h2 {
+    font-size: 1.5rem;
+  }
+
+  .Information p {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+  }
+
+  .features-highlight {
+    padding: 1.5rem;
+    margin-top: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .Information {
+    margin: 0.5rem;
+    padding: 1.5rem 1rem;
+  }
+
+  .Information h1 {
+    font-size: 1.8rem;
+  }
+
+  .Information p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+}
